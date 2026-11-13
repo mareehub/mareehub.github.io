@@ -126,7 +126,13 @@
       'f.7p': 'Is my data safe?', 'f.7r': 'Each building and company only sees its own data, enforced in the database. Admin access requires two-step verification, everything is logged and guests sign the privacy consent.',
       'fi.titulo': 'Ready to transform your management?', 'fi.sub': 'Building manager, short-stay manager, hotel or inn: talk to us and see the system working with your operation.',
       'fi.cta': 'Start a WhatsApp conversation', 'fi.demo': 'or try the sample system now',
-      'r.solucao': 'A solution by', 'r.produto': 'Product', 'r.contato': 'Contact', 'r.legal': 'Legal', 'r.termos': 'Terms of use', 'r.privacidade': 'Privacy policy', flut: 'Sales on WhatsApp'
+      'r.solucao': 'A solution by', 'r.produto': 'Product', 'r.contato': 'Contact', 'r.legal': 'Legal', 'r.termos': 'Terms of use', 'r.privacidade': 'Privacy policy', flut: 'Sales on WhatsApp',
+      'at.selo': 'An Atlântico solution', 'at.titulo': 'Built by people who run real hospitality',
+      'at.sub': 'Maree Hub belongs to Atlântico Facility &amp; Temporada, which manages short-stay flats at Condomínio Maré Alta, in Tamandaré (Brazil). The system was born to run that operation day to day.',
+      'at.1t': 'Flats in Tamandaré and Carneiros', 'at.1': 'Booking center, deals, packages and tide table on the Atlântico website, with direct booking and no middlemen.',
+      'at.2t': 'Full facility services', 'at.2': 'Hotel-standard cleaning, maintenance, linen and outsourced staff for buildings and owners.',
+      'at.3t': 'Tested in our own operation', 'at.3': 'Every screen goes through Maré Alta first, with real guests, front desk and maintenance.',
+      'at.cta': 'Visit the Atlântico website', 'at.link': 'or see the available flats', 'at.alt': 'Home page of the Atlântico Facility &amp; Temporada website'
     },
     es: {
       pular: 'Ir al contenido', assinatura: 'una solución Atlântico', idioma: 'Idioma', entrar: 'Entrar', vendas: 'Hablar con ventas',
@@ -196,7 +202,13 @@
       'f.7p': '¿Mis datos están seguros?', 'f.7r': 'Cada condominio y cada empresa solo ve sus propios datos, con la regla aplicada en la base de datos. Los accesos administrativos piden verificación en dos pasos, todo queda registrado y el huésped firma el consentimiento de privacidad.',
       'fi.titulo': '¿Listo para transformar tu gestión?', 'fi.sub': 'Administrador, administradora, hotel o posada: habla con nosotros y mira el sistema funcionando con tu operación.',
       'fi.cta': 'Iniciar conversación por WhatsApp', 'fi.demo': 'o prueba el sistema de ejemplo ahora',
-      'r.solucao': 'Una solución de', 'r.produto': 'Producto', 'r.contato': 'Contacto', 'r.legal': 'Legal', 'r.termos': 'Términos de uso', 'r.privacidade': 'Política de privacidad', flut: 'Ventas por WhatsApp'
+      'r.solucao': 'Una solución de', 'r.produto': 'Producto', 'r.contato': 'Contacto', 'r.legal': 'Legal', 'r.termos': 'Términos de uso', 'r.privacidade': 'Política de privacidad', flut: 'Ventas por WhatsApp',
+      'at.selo': 'Una solución Atlântico', 'at.titulo': 'Hecho por quien opera hospedaje de verdad',
+      'at.sub': 'Maree Hub es de Atlântico Facility &amp; Temporada, que administra flats por temporada en el Condomínio Maré Alta, en Tamandaré (Brasil). El sistema nació para resolver el día a día de esa operación.',
+      'at.1t': 'Flats en Tamandaré y Carneiros', 'at.1': 'Central de reservas, promociones, paquetes y tabla de mareas en el sitio de Atlântico, con reserva directa y sin intermediarios.',
+      'at.2t': 'Facility completo', 'at.2': 'Limpieza con estándar hotelero, mantenimiento, ropa de cama y personal tercerizado para condominios y propietarios.',
+      'at.3t': 'Probado en la propia operación', 'at.3': 'Cada pantalla pasa primero por Maré Alta, con huéspedes, portería y mantenimiento reales.',
+      'at.cta': 'Conocer el sitio de Atlântico', 'at.link': 'o ver los flats disponibles', 'at.alt': 'Página de inicio del sitio de Atlântico Facility &amp; Temporada'
     }
   };
 

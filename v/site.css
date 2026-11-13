@@ -64,6 +64,8 @@ button { font-family: inherit; }
 .menu-item { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: var(--tinta); font: 500 15px Inter, sans-serif; padding: 8px 12px; border-radius: 10px; white-space: nowrap; }
 .menu-item:hover { background: var(--suave); }
 .so-gaveta { display: none; }
+/* Itens que só cabem na gaveta: no computador o topo já está no limite dos 1200px */
+.menu .na-gaveta { display: none; }
 .acoes { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .entrar { color: var(--tinta); font-weight: 500; text-decoration: none; padding: 8px 10px; border-radius: 10px; }
 .entrar:hover { background: var(--suave); }
@@ -95,6 +97,7 @@ button { font-family: inherit; }
 .janela .barra i { width: 10px; height: 10px; border-radius: 50%; background: var(--borda-forte); }
 .janela .barra span { margin-left: 10px; font-size: 12px; font-weight: 600; color: var(--texto2); }
 .janela img { width: 100%; }
+a.janela { display: block; text-decoration: none; }
 
 /* Composição das três telas da dobra */
 .vitrine-telas { position: relative; max-width: 1120px; margin: 64px auto 0; padding: 0 0 200px; }
@@ -260,6 +263,7 @@ button { font-family: inherit; }
   .hamburguer { display: flex; }
   .menu { display: none; position: absolute; left: 0; right: 0; top: 72px; flex-direction: column; align-items: stretch; gap: 0; margin: 0; padding: 8px 24px 16px; background: #fff; border-bottom: 1px solid var(--borda); box-shadow: var(--sombra-forte); }
   .menu.aberto { display: flex; }
+  .menu .na-gaveta { display: inline-flex; }
   .menu > .menu-item { width: 100%; padding: 14px 8px; font-size: 17px; border-bottom: 1px solid var(--borda); border-radius: 0; }
   .so-gaveta { display: flex; color: var(--acento-forte) !important; font-weight: 700 !important; border-bottom: 0 !important; }
   .modulo-grade, .dois-lados { grid-template-columns: 1fr; gap: 40px; }
