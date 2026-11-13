@@ -1,4 +1,4 @@
-// Site do produto Maree Hub (D122): idiomas, menu "Plataforma", abas das operações, WhatsApp com mensagem por botão,
+// Site do produto Maree Hub (D122, revisão 4): idiomas, menu "Plataforma", abas das operações, WhatsApp com mensagem por botão,
 // cópia do Wi-Fi no celular de exemplo e entrada suave ao rolar. O idioma usa a mesma chave do app (maree.idioma).
 (function () {
   'use strict';
@@ -8,24 +8,45 @@
   // Mensagem que já chega escrita no WhatsApp, conforme o botão tocado.
   var MSG = {
     'pt-BR': {
-      comercial: 'Olá! Gostaria de conhecer o sistema de gestão Maree Hub.', vendas: 'Olá! Quero falar com vendas sobre o Maree Hub.',
-      'd-cond': 'Olá! Quero uma demonstração do Maree Hub para condomínios.', 'd-flat': 'Olá! Quero uma demonstração do Maree Hub para flats por temporada.',
-      'd-guia': 'Olá! Quero uma demonstração do guia digital do hóspede.', 'd-port': 'Olá! Quero uma demonstração da portaria do Maree Hub.',
-      p1: 'Olá! Tenho interesse no plano Condomínio.', p2: 'Olá! Tenho interesse no plano Flats & Short-Stay.', p3: 'Olá! Tenho interesse no plano Ecossistema Completo.',
+      comercial: 'Olá! Vim pelo site do Maree Hub e quero entender como ele funciona na minha operação.',
+      vendas: 'Olá! Quero falar com vendas sobre o Maree Hub para a minha operação.',
+      final: 'Olá! Quero transformar a gestão da minha operação com o Maree Hub. Podemos conversar?',
+      flutuante: 'Olá! Estou no site do Maree Hub e tenho uma dúvida.',
+      'd-cond': 'Olá! Quero uma demonstração do Maree Hub para o meu condomínio: portaria, áreas comuns e moradores.',
+      'd-flat': 'Olá! Quero uma demonstração do Maree Hub para flats por temporada: reservas, check-in e limpeza.',
+      'd-guia': 'Olá! Quero ver o guia digital do hóspede funcionando nos meus apartamentos.',
+      'd-port': 'Olá! Quero uma demonstração da portaria do Maree Hub, com check-in integrado.',
+      p1: 'Olá! Vi o plano Condomínio a partir de R$ 197/mês e quero uma proposta para o meu condomínio.',
+      p2: 'Olá! Vi o plano Flats & Short-Stay a partir de R$ 247/mês e quero uma proposta para os meus flats.',
+      p3: 'Olá! Quero montar uma proposta do Ecossistema Completo para a minha administradora.',
       copiado: 'Senha copiada (é só um exemplo)'
     },
     en: {
-      comercial: 'Hi! I would like to know the Maree Hub management system.', vendas: 'Hi! I want to talk to sales about Maree Hub.',
-      'd-cond': 'Hi! I would like a Maree Hub demo for buildings.', 'd-flat': 'Hi! I would like a Maree Hub demo for short-stay rentals.',
-      'd-guia': 'Hi! I would like a demo of the digital guest guide.', 'd-port': 'Hi! I would like a demo of the Maree Hub front desk.',
-      p1: 'Hi! I am interested in the Building plan.', p2: 'Hi! I am interested in the Flats & Short-Stay plan.', p3: 'Hi! I am interested in the Complete Ecosystem plan.',
+      comercial: 'Hi! I found Maree Hub on the website and want to understand how it works for my operation.',
+      vendas: 'Hi! I want to talk to sales about Maree Hub for my operation.',
+      final: 'Hi! I want to transform my operation with Maree Hub. Can we talk?',
+      flutuante: 'Hi! I am on the Maree Hub website and have a question.',
+      'd-cond': 'Hi! I would like a Maree Hub demo for my building: front desk, common areas and residents.',
+      'd-flat': 'Hi! I would like a Maree Hub demo for short-stay flats: bookings, check-in and cleaning.',
+      'd-guia': 'Hi! I would like to see the digital guest guide working in my apartments.',
+      'd-port': 'Hi! I would like a demo of the Maree Hub front desk with integrated check-in.',
+      p1: 'Hi! I saw the Building plan from R$ 197/month and would like a proposal for my building.',
+      p2: 'Hi! I saw the Flats & Short-Stay plan from R$ 247/month and would like a proposal for my flats.',
+      p3: 'Hi! I would like a Complete Ecosystem proposal for my management company.',
       copiado: 'Password copied (just an example)'
     },
     es: {
-      comercial: '¡Hola! Me gustaría conocer el sistema de gestión Maree Hub.', vendas: '¡Hola! Quiero hablar con ventas sobre Maree Hub.',
-      'd-cond': '¡Hola! Quiero una demostración de Maree Hub para condominios.', 'd-flat': '¡Hola! Quiero una demostración de Maree Hub para flats por temporada.',
-      'd-guia': '¡Hola! Quiero una demostración de la guía digital del huésped.', 'd-port': '¡Hola! Quiero una demostración de la portería de Maree Hub.',
-      p1: '¡Hola! Me interesa el plan Condominio.', p2: '¡Hola! Me interesa el plan Flats & Short-Stay.', p3: '¡Hola! Me interesa el plan Ecosistema Completo.',
+      comercial: '¡Hola! Vi Maree Hub en el sitio y quiero entender cómo funciona en mi operación.',
+      vendas: '¡Hola! Quiero hablar con ventas sobre Maree Hub para mi operación.',
+      final: '¡Hola! Quiero transformar la gestión de mi operación con Maree Hub. ¿Hablamos?',
+      flutuante: '¡Hola! Estoy en el sitio de Maree Hub y tengo una duda.',
+      'd-cond': '¡Hola! Quiero una demostración de Maree Hub para mi condominio: portería, áreas comunes y residentes.',
+      'd-flat': '¡Hola! Quiero una demostración de Maree Hub para flats por temporada: reservas, check-in y limpieza.',
+      'd-guia': '¡Hola! Quiero ver la guía digital del huésped funcionando en mis apartamentos.',
+      'd-port': '¡Hola! Quiero una demostración de la portería de Maree Hub con check-in integrado.',
+      p1: '¡Hola! Vi el plan Condominio desde R$ 197/mes y quiero una propuesta para mi condominio.',
+      p2: '¡Hola! Vi el plan Flats & Short-Stay desde R$ 247/mes y quiero una propuesta para mis flats.',
+      p3: '¡Hola! Quiero armar una propuesta del Ecosistema Completo para mi administradora.',
       copiado: 'Contraseña copiada (es solo un ejemplo)'
     }
   };
@@ -35,7 +56,7 @@
       pular: 'Skip to content', assinatura: 'an Atlântico solution', idioma: 'Language', entrar: 'Sign in', vendas: 'Talk to sales',
       'm.plataforma': 'Platform', 'm.cond': 'Buildings', 'm.condD': 'Front desk, common areas and residents', 'm.flats': 'Flats &amp; Short-stay', 'm.flatsD': 'Bookings, check-in and cleaning',
       'm.flatsCurto': 'Short-stay flats', 'm.guia': 'Guest Guide', 'm.guiaD': 'The whole stay in one link', 'm.port': 'Front desk &amp; Security', 'm.portD': 'Who comes in and out, in real time', 'm.planos': 'Plans',
-      'h.titulo': 'You manage.<br><span>The system automates.</span>', 'h.sub': 'One visual platform where building managers, flat operators and guests work in sync, from the front desk to check-out.',
+      'h.titulo': 'You manage.<br><span class="grad">The system automates.</span>', 'h.sub': 'One visual platform where building managers, flat operators and guests work in sync, from the front desk to check-out.',
       'h.cta': 'Talk to sales on WhatsApp', 'h.m1': 'Guided onboarding', 'h.m2': 'Human support', 'h.m3': 'Free demo',
       'q.titulo': 'Operations board', 'q.hoje': 'today', 'q.v1': 'Board', 'q.v2': 'Calendar', 'q.v3': 'Dashboard', 'q.g1': 'Arriving today', 'q.c1': 'Unit', 'q.c2': 'Guest', 'q.c3': 'Check-in', 'q.c4': 'Cleaning', 'q.c5': 'Ready',
       'q.g2': 'Building', 'q.r1': 'Block A lobby', 'q.r1b': 'Light bulb replacement', 'q.r2': 'Party room', 'q.r2b': 'Booked by A · 302', 'q.r3': 'All residents', 'q.r3b': 'Pool maintenance',
@@ -81,13 +102,28 @@
       'f.7p': 'Is my data safe?', 'f.7r': 'Each building and company only sees its own data, enforced in the database. Admin access requires two-step verification, everything is logged and guests sign the privacy consent.',
       'fi.titulo': 'Ready to transform your management?', 'fi.sub': 'Building manager, management company or host: talk to us and see the system working with your operation.',
       'fi.cta': 'Start a WhatsApp conversation', 'fi.demo': 'or try the sample system now',
-      'r.solucao': 'A solution by', 'r.produto': 'Product', 'r.contato': 'Contact', 'r.legal': 'Legal', 'r.termos': 'Terms of use', 'r.privacidade': 'Privacy policy', flut: 'Sales on WhatsApp'
+      'r.solucao': 'A solution by', 'r.produto': 'Product', 'r.contato': 'Contact', 'r.legal': 'Legal', 'r.termos': 'Terms of use', 'r.privacidade': 'Privacy policy', flut: 'Sales on WhatsApp',
+      'h.badge': 'All-in-one system for buildings and short-stay', 'q.v3': 'Dashboards', 'k.1': 'Arrivals today', 'k.2': 'Online check-in', 'k.3': 'Cleanings', 'k.3s': 'in progress', 'k.4': 'Open requests',
+      'p.titulo': 'Born inside a real building, in Tamandaré, Brazil', 'p.4': 'guide online, no one needs to answer',
+      'caso.selo': 'Case study', 'caso.titulo': 'Condomínio Maré Alta · Tamandaré (PE)', 'caso.texto': 'This is where Maree Hub runs every day. Atlântico manages short-stay flats inside the building, and the system was born to solve the real routine of hosting guests in a building with residents.',
+      'caso.1t': 'Front desk', 'caso.1': 'gets the guest list with online check-in already reviewed, instead of a sheet of paper at the counter',
+      'caso.2t': 'Hosts', 'caso.2': 'send a single link, and guests find Wi-Fi, rules and local tips without asking',
+      'caso.3t': 'Building manager', 'caso.3': 'follows occupancy, work orders and notices on one dashboard',
+      'a2.3': 'Cleaning and linen schedule as work orders for the team', 'a2.escala': 'Cleaning schedule · today', 'st.agendada': 'Scheduled',
+      'a3.4': 'Tamandaré guide with beaches, tides and emergency contacts', 'a3.cab': 'Stay guide', 'a3.regras': 'House rules', 'a3.r1': 'Quiet after 10 pm', 'a3.r2': 'No smoking in the apartment', 'a3.r3': 'Check-out by 11 am',
+      'a3.roteiro': 'Things to do in Tamandaré', 'a3.mare': 'Low tide today', 'a3.chip': 'Check-in completed', 'a3.chipS': 'codes released at 2 pm',
+      'c.titulo': 'Why Maree Hub works in real operations', 'c.sub': 'Built by people who host guests and run a building every day.',
+      'ad.titulo': 'From operational chaos to autopilot', 'ad.sub': 'If the left column sounds familiar, the right one is what changes in the first week.',
+      'ad.sem': 'Without Maree Hub', 'ad.semT': 'Operational chaos', 'ad.s1': 'Parallel spreadsheets nobody updates', 'ad.s2': 'A lost front desk, with guests arriving unregistered', 'ad.s3': 'The same Wi-Fi and rules questions on WhatsApp, every booking', 'ad.s4': 'Forgotten cleaning and guests waiting for the apartment',
+      'ad.com': 'With Maree Hub', 'ad.comT': 'Operation on autopilot', 'ad.c1': 'Online check-in integrated with the front desk', 'ad.c2': 'Digital guide delivered to guests in one link', 'ad.c3': 'Cleaning team triggered by work orders, with status', 'ad.c4': 'Building manager in full control on one dashboard',
+      'pl.titulo': 'Clear plans, tailored proposal', 'pl.sub': 'Start with the plan for your operation. The final price depends on the number of units and comes through WhatsApp, no forms.',
+      'pl.apartir': 'From', 'pl.mes': '/month', 'pl.medida': 'Tailored', 'pl.proposta': 'Build my proposal', 'pl.nota': 'Guided onboarding and team training in every plan.'
     },
     es: {
       pular: 'Ir al contenido', assinatura: 'una solución Atlântico', idioma: 'Idioma', entrar: 'Entrar', vendas: 'Hablar con ventas',
       'm.plataforma': 'Plataforma', 'm.cond': 'Condominios', 'm.condD': 'Portería, áreas comunes y residentes', 'm.flats': 'Flats y Temporada', 'm.flatsD': 'Reservas, check-in y limpieza',
       'm.flatsCurto': 'Flats por temporada', 'm.guia': 'Guía del Huésped', 'm.guiaD': 'Toda la estadía en un enlace', 'm.port': 'Portería y Seguridad', 'm.portD': 'Quién entra y quién sale, al instante', 'm.planos': 'Planes',
-      'h.titulo': 'Tú gestionas.<br><span>El sistema automatiza.</span>', 'h.sub': 'Una plataforma única y visual donde administradores, gestores de flats y huéspedes operan en sintonía, de la portería al check-out.',
+      'h.titulo': 'Tú gestionas.<br><span class="grad">El sistema automatiza.</span>', 'h.sub': 'Una plataforma única y visual donde administradores, gestores de flats y huéspedes operan en sintonía, de la portería al check-out.',
       'h.cta': 'Hablar con ventas por WhatsApp', 'h.m1': 'Implementación guiada', 'h.m2': 'Soporte humano', 'h.m3': 'Demostración gratuita',
       'q.titulo': 'Tablero de operaciones', 'q.hoje': 'hoy', 'q.v1': 'Tablero', 'q.v2': 'Calendario', 'q.v3': 'Panel', 'q.g1': 'Llegadas de hoy', 'q.c1': 'Unidad', 'q.c2': 'Huésped', 'q.c3': 'Check-in', 'q.c4': 'Limpieza', 'q.c5': 'Listo',
       'q.g2': 'Condominio', 'q.r1': 'Hall del bloque A', 'q.r1b': 'Cambio de lámpara', 'q.r2': 'Salón de fiestas', 'q.r2b': 'Reserva del A · 302', 'q.r3': 'Todos los residentes', 'q.r3b': 'Mantenimiento de la piscina',
@@ -133,7 +169,22 @@
       'f.7p': '¿Mis datos están seguros?', 'f.7r': 'Cada condominio y cada empresa solo ve sus propios datos, con la regla aplicada en la base de datos. Los accesos administrativos piden verificación en dos pasos, todo queda registrado y el huésped firma el consentimiento de privacidad.',
       'fi.titulo': '¿Listo para transformar tu gestión?', 'fi.sub': 'Administrador, administradora o anfitrión: habla con nosotros y mira el sistema funcionando con tu operación.',
       'fi.cta': 'Iniciar conversación por WhatsApp', 'fi.demo': 'o prueba el sistema de ejemplo ahora',
-      'r.solucao': 'Una solución de', 'r.produto': 'Producto', 'r.contato': 'Contacto', 'r.legal': 'Legal', 'r.termos': 'Términos de uso', 'r.privacidade': 'Política de privacidad', flut: 'Ventas por WhatsApp'
+      'r.solucao': 'Una solución de', 'r.produto': 'Producto', 'r.contato': 'Contacto', 'r.legal': 'Legal', 'r.termos': 'Términos de uso', 'r.privacidade': 'Política de privacidad', flut: 'Ventas por WhatsApp',
+      'h.badge': 'Sistema all-in-one para condominios y short-stay', 'q.v3': 'Paneles', 'k.1': 'Llegadas hoy', 'k.2': 'Check-in online', 'k.3': 'Limpiezas', 'k.3s': 'en curso', 'k.4': 'Pedidos abiertos',
+      'p.titulo': 'Nació dentro de un condominio real, en Tamandaré (Brasil)', 'p.4': 'guía disponible, sin depender de nadie',
+      'caso.selo': 'Caso de estudio', 'caso.titulo': 'Condominio Maré Alta · Tamandaré (PE)', 'caso.texto': 'Aquí Maree Hub funciona todos los días. Atlântico administra flats por temporada dentro del condominio, y el sistema nació para resolver la rutina real de recibir huéspedes en un edificio con residentes.',
+      'caso.1t': 'Portería', 'caso.1': 'recibe la lista de huéspedes con el check-in online ya revisado, en lugar de un papel en el mostrador',
+      'caso.2t': 'Anfitriones', 'caso.2': 'envían un solo enlace, y el huésped encuentra Wi-Fi, reglas y consejos de la zona sin preguntar',
+      'caso.3t': 'Administrador', 'caso.3': 'sigue ocupación, órdenes de servicio y avisos en un panel',
+      'a2.3': 'Escala de limpieza y ropa de cama por orden de servicio', 'a2.escala': 'Escala de limpieza · hoy', 'st.agendada': 'Agendada',
+      'a3.4': 'Guía de Tamandaré con playas, mareas y contactos de emergencia', 'a3.cab': 'Guía de la estadía', 'a3.regras': 'Reglas de la casa', 'a3.r1': 'Silencio después de las 22h', 'a3.r2': 'Prohibido fumar en el apartamento', 'a3.r3': 'Check-out hasta las 11h',
+      'a3.roteiro': 'Qué hacer en Tamandaré', 'a3.mare': 'Marea baja hoy', 'a3.chip': 'Check-in completado', 'a3.chipS': 'claves liberadas a las 14h',
+      'c.titulo': 'Por qué Maree Hub funciona en la operación real', 'c.sub': 'Hecho por quien recibe huéspedes y cuida un condominio todos los días.',
+      'ad.titulo': 'Del caos operativo al piloto automático', 'ad.sub': 'Si la columna izquierda te resulta familiar, la derecha es lo que cambia en la primera semana.',
+      'ad.sem': 'Sin Maree Hub', 'ad.semT': 'Caos operativo', 'ad.s1': 'Planillas paralelas que nadie actualiza', 'ad.s2': 'Portería perdida, con huéspedes llegando sin registro', 'ad.s3': 'Las mismas preguntas de Wi-Fi y reglas por WhatsApp, en cada reserva', 'ad.s4': 'Limpieza olvidada y huésped esperando el apartamento',
+      'ad.com': 'Con Maree Hub', 'ad.comT': 'Operación en piloto automático', 'ad.c1': 'Check-in online integrado a la portería', 'ad.c2': 'Guía digital entregada al huésped en un enlace', 'ad.c3': 'Equipo de limpieza activado por orden de servicio, con estado', 'ad.c4': 'Administrador con control total en un panel',
+      'pl.titulo': 'Planes claros, propuesta a medida', 'pl.sub': 'Empieza por el plan de tu operación. El valor final depende del número de unidades y llega por WhatsApp, sin formularios.',
+      'pl.apartir': 'Desde', 'pl.mes': '/mes', 'pl.medida': 'A medida', 'pl.proposta': 'Armar mi propuesta', 'pl.nota': 'Implementación guiada y capacitación del equipo en todos los planes.'
     }
   };
 
@@ -234,12 +285,14 @@
 
   // Wi-Fi do celular de exemplo: mostra como o hóspede copia a senha.
   var aviso = document.getElementById('aviso'), tempo;
-  document.getElementById('copiarWifi').addEventListener('click', function () {
-    try { navigator.clipboard && navigator.clipboard.writeText('praia2026'); } catch (e) { /* só demonstração */ }
-    aviso.textContent = MSG[idiomaAtual].copiado;
-    aviso.classList.add('mostrar');
-    clearTimeout(tempo);
-    tempo = setTimeout(function () { aviso.classList.remove('mostrar'); }, 2200);
+  document.querySelectorAll('[data-copiar]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { navigator.clipboard && navigator.clipboard.writeText('praia2026'); } catch (e) { /* só demonstração */ }
+      aviso.textContent = MSG[idiomaAtual].copiado;
+      aviso.classList.add('mostrar');
+      clearTimeout(tempo);
+      tempo = setTimeout(function () { aviso.classList.remove('mostrar'); }, 2200);
+    });
   });
 
   // Linha sob o topo e rótulo do WhatsApp flutuante depois de rolar.
