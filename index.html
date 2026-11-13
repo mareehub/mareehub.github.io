@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maree Hub · Condomínio e hospedagem num lugar só</title>
-<meta name="description" content="Maree Hub, uma solução Atlântico: portaria, moradores, hóspedes, manutenção, documentos e loja conectados num só sistema, no celular e no computador.">
+<title>Maree Hub · Você gerencia. O sistema automatiza.</title>
+<meta name="description" content="Maree Hub, uma solução Atlântico: gestão de condomínio, flats por temporada e guia digital do hóspede numa plataforma só. Portaria, check-in online, calendários do Booking e Airbnb e guia por link ou QR Code.">
 <link rel="canonical" href="https://mareehub.com.br/">
 <meta name="theme-color" content="#6161FF">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Maree Hub">
-<meta property="og:title" content="Maree Hub · Condomínio e hospedagem num lugar só">
-<meta property="og:description" content="Portaria, moradores, hóspedes, manutenção e loja conectados. Uma solução Atlântico.">
+<meta property="og:title" content="Maree Hub · Você gerencia. O sistema automatiza.">
+<meta property="og:description" content="Condomínio, flats por temporada e guia digital do hóspede numa plataforma só, da portaria ao check-out. Uma solução Atlântico.">
 <meta property="og:url" content="https://mareehub.com.br/">
 <meta property="og:image" content="https://mareehub.com.br/v/previa.jpg">
 <meta property="og:image:width" content="1200">
@@ -38,221 +38,354 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/v/site.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Maree Hub","applicationCategory":"BusinessApplication","operatingSystem":"Web, Android, iOS","url":"https://mareehub.com.br/","description":"Gestão de condomínio e hospedagem: portaria, moradores, hóspedes, manutenção, documentos e loja.","publisher":{"@type":"Organization","name":"Atlântico Facility & Temporada","url":"https://atlanticofacilitytemporada.com.br"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Maree Hub","applicationCategory":"BusinessApplication","operatingSystem":"Web, Android, iOS","url":"https://mareehub.com.br/","description":"Gestão de condomínio, flats por temporada e guia digital do hóspede numa plataforma só.","publisher":{"@type":"Organization","name":"Atlântico Facility & Temporada","url":"https://atlanticofacilitytemporada.com.br"}}
 </script>
 </head>
 <body>
+<!-- Ícones no traço do Lucide (2px), usados com <use href="#i-..."> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.5 9.5c.3 1.6 1.4 3.4 3.4 4.4l1.2-1 2 .9-.4 1.6c-3.6.4-7.3-3.4-7-7l1.6-.4.9 2z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-baixo" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-predio" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+    <symbol id="i-chave" viewBox="0 0 24 24"><path d="M2.6 18.4a2 2 0 0 0-.6 1.4V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.2a2 2 0 0 0 1.4-.6l.8-.8a6.5 6.5 0 1 0-4-4Z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+    <symbol id="i-celular" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 20h.01M2 8.8a15 15 0 0 1 20 0M5 12.9a10 10 0 0 1 14 0M8.5 16.4a5 5 0 0 1 7 0"/></symbol>
+    <symbol id="i-copiar" viewBox="0 0 24 24"><rect x="8" y="8" width="14" height="14" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-regras" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M9 13l2 2 4-4"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/></symbol>
+    <symbol id="i-onda" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+    <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4ZM3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-sirene" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6M5 21a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1ZM21 12h1M18.5 4.5 18 5M2 12h1M12 2v1M4.9 4.9l.7.7"/></symbol>
+    <symbol id="i-sair" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+    <symbol id="i-sino" viewBox="0 0 24 24"><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/></symbol>
+    <symbol id="i-grafico" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16M7 16v-4M12 16V8M17 16v-7"/></symbol>
+    <symbol id="i-estrela" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.1 2.1 0 0 0 1.6 1.16l5.16.76a.53.53 0 0 1 .3.9l-3.74 3.64a2.1 2.1 0 0 0-.6 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.1 2.1 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.1 2.1 0 0 0-.6-1.88L2.16 9.8a.53.53 0 0 1 .3-.9l5.16-.76a2.1 2.1 0 0 0 1.6-1.16z"/></symbol>
+    <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-idioma" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  </defs>
+</svg>
+
 <a class="pular" href="#conteudo" data-t="pular">Pular para o conteúdo</a>
 
 <header class="topo" id="topo">
-  <div class="faixa">
+  <div class="faixa topo-linha">
     <a class="marca" href="/" aria-label="Maree Hub">
-      <img src="/v/simbolo-192.png" alt="" width="36" height="36">
+      <img src="/v/simbolo-192.png" alt="" width="34" height="34">
       <span><b>Maree <em>Hub</em></b><small data-t="assinatura">uma solução Atlântico</small></span>
     </a>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="#perfis" data-t="m.solucoes">Soluções</a>
-      <a href="#modulos" data-t="m.modulos">Módulos</a>
-      <a href="#guia" data-t="m.guia">Guia do hóspede</a>
-      <a href="#seguranca" data-t="m.seguranca">Segurança</a>
-      <a href="#planos" data-t="m.planos">Planos</a>
-      <a class="so-celular" href="/entrar" data-t="entrar">Entrar</a>
+      <div class="suspenso">
+        <button class="menu-item" id="btnPlataforma" aria-expanded="false" aria-controls="listaPlataforma"><span data-t="m.plataforma">Plataforma</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></button>
+        <div class="suspenso-caixa" id="listaPlataforma">
+          <a href="#condominios" data-aba="cond"><span class="quad cor-cond"><svg class="ic"><use href="#i-predio"/></svg></span><span><b data-t="m.cond">Condomínios</b><small data-t="m.condD">Portaria, áreas comuns e moradores</small></span></a>
+          <a href="#flats" data-aba="flat"><span class="quad cor-flat"><svg class="ic"><use href="#i-chave"/></svg></span><span><b data-t="m.flats">Flats &amp; Temporada</b><small data-t="m.flatsD">Reservas, check-in e limpeza</small></span></a>
+          <a href="#guia" data-aba="guia"><span class="quad cor-guia"><svg class="ic"><use href="#i-celular"/></svg></span><span><b data-t="m.guia">Guia do Hóspede</b><small data-t="m.guiaD">Tudo da estadia num link</small></span></a>
+          <a href="#portaria" data-aba="port"><span class="quad cor-port"><svg class="ic"><use href="#i-escudo"/></svg></span><span><b data-t="m.port">Portaria &amp; Segurança</b><small data-t="m.portD">Quem entra e quem sai, na hora</small></span></a>
+        </div>
+      </div>
+      <a class="menu-item" href="#condominios" data-aba="cond" data-t="m.cond">Condomínios</a>
+      <a class="menu-item" href="#flats" data-aba="flat" data-t="m.flats">Flats &amp; Temporada</a>
+      <a class="menu-item" href="#guia" data-aba="guia" data-t="m.guia">Guia do Hóspede</a>
+      <a class="menu-item" href="#planos" data-t="m.planos">Planos</a>
+      <a class="menu-item so-gaveta" href="/entrar" data-t="entrar">Entrar</a>
     </nav>
     <div class="acoes">
       <label class="idioma"><span class="oculto" data-t="idioma">Idioma</span>
-        <select id="idioma" aria-label="Idioma">
-          <option value="pt-BR">PT</option><option value="en">EN</option><option value="es">ES</option>
-        </select>
+        <svg class="ic" aria-hidden="true"><use href="#i-idioma"/></svg>
+        <select id="idioma"><option value="pt-BR">PT</option><option value="en">EN</option><option value="es">ES</option></select>
       </label>
-      <a class="btn texto so-computador" href="/entrar" data-t="entrar">Entrar</a>
-      <a class="btn principal so-computador" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
+      <a class="entrar so-largo" href="/entrar" data-t="entrar">Entrar</a>
+      <a class="pilula so-largo" data-whats="vendas" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="vendas">Falar com vendas</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
       <button class="hamburguer" id="abrirMenu" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main id="conteudo">
-  <section class="abertura">
-    <div class="faixa abertura-grade">
-      <div class="abertura-texto revelar">
-        <p class="selo" data-t="h.selo">Uma solução Atlântico</p>
-        <h1 data-t="h.titulo">Seu condomínio e sua hospedagem <span>num lugar só.</span></h1>
-        <p class="sub" data-t="h.sub">Portaria, moradores, hóspedes, manutenção, documentos e loja, conectados. No celular e no computador, sem instalar nada.</p>
-        <div class="botoes">
-          <a class="btn principal grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
-          <a class="btn contorno grande" href="/condominio?demo=1" data-t="h.demo">Ver demonstração</a>
+  <!-- 1. Dobra principal centralizada -->
+  <section class="hero">
+    <div class="faixa">
+      <div class="hero-texto revelar">
+        <h1 data-t="h.titulo">Você gerencia.<br><span>O sistema automatiza.</span></h1>
+        <p class="sub" data-t="h.sub">Uma plataforma única e visual onde síndicos, administradores de flats e hóspedes operam em sintonia, da portaria ao check-out.</p>
+        <a class="pilula grande" data-whats="comercial" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg><span data-t="h.cta">Falar com o comercial no WhatsApp</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+        <p class="micro"><span data-t="h.m1">Implantação guiada</span><i>✦</i><span data-t="h.m2">Suporte humanizado</span><i>✦</i><span data-t="h.m3">Demonstração gratuita</span></p>
+      </div>
+
+      <!-- Quadro unificado de operações (mockup em código) + celular com o guia -->
+      <div class="hero-visual revelar" aria-label="Exemplo do quadro de operações e do guia do hóspede" role="img">
+        <div class="quadro" aria-hidden="true">
+          <div class="quadro-topo">
+            <div><b data-t="q.titulo">Quadro de operações</b><small>Condomínio Maré Alta · <span data-t="q.hoje">hoje</span></small></div>
+            <div class="vistas"><span class="ativa" data-t="q.v1">Quadro</span><span data-t="q.v2">Calendário</span><span data-t="q.v3">Painel</span></div>
+          </div>
+          <div class="grupo cor-cond-borda">
+            <p class="grupo-nome cor-cond-texto" data-t="q.g1">Chegadas de hoje</p>
+            <div class="linha cab"><span data-t="q.c1">Unidade</span><span data-t="q.c2">Hóspede</span><span data-t="q.c3">Check-in</span><span data-t="q.c4">Limpeza</span><span class="col-prog" data-t="q.c5">Pronto</span></div>
+            <div class="linha"><span>A · 101</span><span>Maria Eduarda</span><span class="st verde" data-t="st.liberado">Check-in liberado</span><span class="st verde" data-t="st.limpo">Limpeza concluída</span><span class="col-prog"><i class="barra-prog"><i style="width:100%"></i></i></span></div>
+            <div class="linha"><span>A · 103</span><span>Roberto Carvalho</span><span class="st ambar" data-t="st.pendente">Check-in pendente</span><span class="st laranja" data-t="st.limpando">Em limpeza</span><span class="col-prog"><i class="barra-prog"><i style="width:55%"></i></i></span></div>
+            <div class="linha"><span>A · 201</span><span>Juliana Martins</span><span class="st azul" data-t="st.docs">Documentos enviados</span><span class="st verde" data-t="st.limpo">Limpeza concluída</span><span class="col-prog"><i class="barra-prog"><i style="width:80%"></i></i></span></div>
+          </div>
+          <div class="grupo cor-coral-borda">
+            <p class="grupo-nome cor-coral-texto" data-t="q.g2">Condomínio</p>
+            <div class="linha"><span data-t="q.r1">Hall do bloco A</span><span data-t="q.r1b">Troca de lâmpada</span><span class="st ambar" data-t="st.execucao">Em execução</span><span class="st cinza">Zeladoria</span><span class="col-prog"><i class="barra-prog"><i style="width:40%"></i></i></span></div>
+            <div class="linha"><span data-t="q.r2">Salão de festas</span><span data-t="q.r2b">Reserva do A · 302</span><span class="st verde" data-t="st.aprovada">Reserva aprovada</span><span class="st roxo" data-t="st.sabado">Sábado</span><span class="col-prog"><i class="barra-prog"><i style="width:100%"></i></i></span></div>
+            <div class="linha"><span data-t="q.r3">Todos os moradores</span><span data-t="q.r3b">Manutenção da piscina</span><span class="st indigo" data-t="st.enviado">Comunicado enviado</span><span class="st cinza" data-t="st.lido">86% leram</span><span class="col-prog"><i class="barra-prog"><i style="width:86%"></i></i></span></div>
+          </div>
         </div>
-        <p class="micro" data-t="h.micro">A demonstração abre um condomínio de exemplo, sem cadastro.</p>
-      </div>
-      <div class="mosaico revelar" aria-hidden="true">
-        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/condominio.jpg" alt="" width="1600" height="1000" fetchpriority="high"></figure>
-        <figure class="celular"><img src="/v/guia.jpg" alt="" width="424" height="700"></figure>
+
+        <div class="fone" aria-hidden="true">
+          <div class="fone-tela">
+            <div class="fone-status"><span>9:41</span><i></i></div>
+            <div class="fone-cab"><span class="quad mini cor-cond">A</span><div><b>Flat Maré Alta</b><small>Apto 302 · 12 → 15 nov</small></div></div>
+            <p class="fone-ola"><span data-t="g.ola">Olá,</span> <b>Maria</b></p>
+            <div class="fone-wifi">
+              <span class="quad cor-cond"><svg class="ic"><use href="#i-wifi"/></svg></span>
+              <div><small>Wi-Fi</small><b>MareAlta_302</b></div>
+              <button type="button" class="copiar" id="copiarWifi" tabindex="-1"><svg class="ic"><use href="#i-copiar"/></svg><span data-t="g.copiar">Copiar senha</span></button>
+            </div>
+            <div class="fone-grade">
+              <span><i class="quad cor-guia"><svg class="ic"><use href="#i-regras"/></svg></i><b data-t="g.regras">Regras</b></span>
+              <span><i class="quad cor-flat"><svg class="ic"><use href="#i-mapa"/></svg></i><b data-t="g.regiao">Região</b></span>
+              <span><i class="quad cor-coral"><svg class="ic"><use href="#i-tv"/></svg></i><b data-t="g.aparelhos">Aparelhos</b></span>
+              <span><i class="quad cor-port"><svg class="ic"><use href="#i-onda"/></svg></i><b data-t="g.mares">Marés</b></span>
+            </div>
+            <div class="fone-dica"><small data-t="g.dica">Dica local</small><b data-t="g.dicaT">Praia dos Carneiros · 15 min</b><span data-t="g.dicaS">Melhor com a maré baixa, às 10:42</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="fatos" aria-label="Em resumo">
-    <div class="faixa fatos-grade">
-      <p><b data-t="f.1a">Em uso no Maré Alta</b><span data-t="f.1b">Tamandaré, Pernambuco</span></p>
-      <p><b data-t="f.2a">Sem instalar</b><span data-t="f.2b">abre no navegador e vira app no celular</span></p>
-      <p><b data-t="f.3a">3 idiomas</b><span data-t="f.3b">português, inglês e espanhol</span></p>
-      <p><b data-t="f.4a">Por módulos</b><span data-t="f.4b">você contrata só o que usa</span></p>
+  <!-- 2. Prova: só o que é verdade hoje -->
+  <section class="prova" aria-labelledby="provaTitulo">
+    <div class="faixa">
+      <p class="prova-titulo" id="provaTitulo" data-t="p.titulo">Nasceu dentro de um condomínio de verdade e está em operação no Condomínio Maré Alta, em Tamandaré (PE)</p>
+      <div class="prova-grade">
+        <p><b>3</b><span data-t="p.1">operações num só sistema</span></p>
+        <p><b>0</b><span data-t="p.2">aplicativos para o hóspede instalar</span></p>
+        <p><b>3</b><span data-t="p.3">idiomas no guia e no painel</span></p>
+        <p><b>24h</b><span data-t="p.4">guia no ar para o hóspede, sem depender de ninguém</span></p>
+      </div>
     </div>
   </section>
 
-  <section class="secao" id="perfis">
+  <!-- 3. Uma plataforma para cada operação -->
+  <section class="secao" id="plataforma">
     <div class="faixa">
       <header class="cabeca revelar">
-        <p class="selo" data-t="p.selo">Para quem é</p>
-        <h2 data-t="p.titulo">Cada pessoa vê o que precisa</h2>
-        <p data-t="p.sub">O mesmo sistema, com uma tela certa para cada perfil.</p>
+        <h2 data-t="t.titulo">Uma plataforma para cada operação</h2>
+        <p data-t="t.sub">Escolha por onde começar. Tudo conversa com tudo.</p>
       </header>
-      <div class="abas" role="tablist" aria-label="Perfis">
-        <button role="tab" aria-selected="true" aria-controls="aba-sindico" id="t-sindico" data-t="p.sindico">Síndico</button>
-        <button role="tab" aria-selected="false" aria-controls="aba-morador" id="t-morador" tabindex="-1" data-t="p.morador">Morador</button>
-        <button role="tab" aria-selected="false" aria-controls="aba-portaria" id="t-portaria" tabindex="-1" data-t="p.portaria">Portaria</button>
-        <button role="tab" aria-selected="false" aria-controls="aba-hospede" id="t-hospede" tabindex="-1" data-t="p.hospede">Anfitrião e hóspede</button>
-        <button role="tab" aria-selected="false" aria-controls="aba-manutencao" id="t-manutencao" tabindex="-1" data-t="p.manutencao">Manutenção</button>
+      <span id="condominios" class="ancora"></span><span id="flats" class="ancora"></span><span id="portaria" class="ancora"></span><span id="guia" class="ancora"></span>
+      <div class="abas" role="tablist" aria-label="Operações">
+        <button role="tab" id="t-cond" aria-controls="a-cond" aria-selected="true" data-cor="cond"><span class="quad cor-cond"><svg class="ic"><use href="#i-predio"/></svg></span><span data-t="m.cond">Condomínios</span></button>
+        <button role="tab" id="t-flat" aria-controls="a-flat" aria-selected="false" tabindex="-1" data-cor="flat"><span class="quad cor-flat"><svg class="ic"><use href="#i-chave"/></svg></span><span data-t="m.flatsCurto">Flats por temporada</span></button>
+        <button role="tab" id="t-guia" aria-controls="a-guia" aria-selected="false" tabindex="-1" data-cor="guia"><span class="quad cor-guia"><svg class="ic"><use href="#i-celular"/></svg></span><span data-t="m.guia">Guia do Hóspede</span></button>
+        <button role="tab" id="t-port" aria-controls="a-port" aria-selected="false" tabindex="-1" data-cor="port"><span class="quad cor-port"><svg class="ic"><use href="#i-escudo"/></svg></span><span data-t="m.port">Portaria &amp; Segurança</span></button>
       </div>
 
-      <div class="painel" role="tabpanel" id="aba-sindico" aria-labelledby="t-sindico">
+      <div class="painel" role="tabpanel" id="a-cond" aria-labelledby="t-cond">
         <div class="painel-texto">
-          <h3 data-t="p.s.t">O condomínio inteiro numa tela</h3>
-          <ul>
-            <li data-t="p.s.1">Ocupação, hóspedes na casa e check-ins pendentes, ao abrir o painel.</li>
-            <li data-t="p.s.2">Unidades, moradores, comunicados, documentos e áreas comuns, tudo cadastrado num lugar.</li>
-            <li data-t="p.s.3">Perfis de acesso para administradora, conselho, portaria e zeladoria.</li>
+          <span class="etiqueta cor-cond" data-t="m.cond">Condomínios</span>
+          <h3 data-t="a1.t">O condomínio inteiro numa tela</h3>
+          <ul class="lista">
+            <li data-t="a1.1">Controle de acesso com hóspedes, visitantes, veículos e encomendas</li>
+            <li data-t="a1.2">Reservas de áreas comuns com regras, horários e aprovação</li>
+            <li data-t="a1.3">Comunicados e documentos para o morador ler sem baixar</li>
+            <li data-t="a1.4">Controle de inadimplência, multas e advertências</li>
+            <li data-t="a1.5">Ocorrências e ordens de serviço com prazo e responsável</li>
           </ul>
-          <a class="link" href="/condominio?demo=1" data-t="p.ver">Ver o exemplo →</a>
+          <a class="pilula" data-whats="d-cond" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="demo">Solicitar demonstração</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <a class="link-exemplo" href="/condominio?demo=1" data-t="exemplo">ou abra o exemplo agora</a>
         </div>
-        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/condominio.jpg" alt="Painel do síndico do Maree Hub" width="1600" height="1000" loading="lazy" data-t-alt="p.s.alt"></figure>
+        <div class="maquete" aria-hidden="true">
+          <div class="cartoes-num">
+            <div><small data-t="a1.k1">Ocupação hoje</small><b>4 <span>/ 24</span></b><i class="barra-prog"><i style="width:17%"></i></i></div>
+            <div><small data-t="a1.k2">Encomendas</small><b>3</b><span class="st ambar" data-t="a1.k2s">aguardando retirada</span></div>
+            <div><small data-t="a1.k3">Ordens de serviço</small><b>8</b><span class="st coral" data-t="a1.k3s">2 atrasadas</span></div>
+          </div>
+          <div class="mini-quadro">
+            <p class="mini-titulo"><svg class="ic"><use href="#i-calendario"/></svg><span data-t="a1.areas">Áreas comuns · esta semana</span></p>
+            <div class="mini-linha"><span data-t="a1.l1">Salão de festas</span><span>A · 302</span><span class="st verde" data-t="st.aprovada">Reserva aprovada</span></div>
+            <div class="mini-linha"><span data-t="a1.l2">Churrasqueira</span><span>B · 101</span><span class="st ambar" data-t="st.analise">Em análise</span></div>
+            <div class="mini-linha"><span data-t="a1.l3">Piscina</span><span data-t="a1.l3b">Todos</span><span class="st coral" data-t="st.manut">Em manutenção</span></div>
+          </div>
+        </div>
       </div>
 
-      <div class="painel" role="tabpanel" id="aba-morador" aria-labelledby="t-morador" hidden>
+      <div class="painel" role="tabpanel" id="a-flat" aria-labelledby="t-flat" hidden>
         <div class="painel-texto">
-          <h3 data-t="p.m.t">O morador resolve pelo celular</h3>
-          <ul>
-            <li data-t="p.m.1">Avisos, encomendas, visitas e reservas de áreas comuns.</li>
-            <li data-t="p.m.2">Abre ordens de serviço e acompanha cada etapa.</li>
-            <li data-t="p.m.3">Regras e documentos do condomínio sempre à mão, sem baixar arquivo.</li>
+          <span class="etiqueta cor-flat" data-t="m.flatsCurto">Flats por temporada</span>
+          <h3 data-t="a2.t">Temporada sem planilha e sem correria</h3>
+          <ul class="lista">
+            <li data-t="a2.1">Calendário unificado: Booking, Airbnb e Vrbo por iCal, e Stays com os dados do hóspede</li>
+            <li data-t="a2.2">Check-in online automático, com documentos e termo LGPD</li>
+            <li data-t="a2.3">Limpeza e enxoval organizados por ordem de serviço para a equipe</li>
+            <li data-t="a2.4">Portaria recebe a lista de chegadas sem ninguém avisar</li>
+            <li data-t="a2.5">Proprietário acompanha as hospedagens do imóvel</li>
           </ul>
-          <a class="link" href="/morador?demo=1" data-t="p.ver">Ver o exemplo →</a>
+          <a class="pilula" data-whats="d-flat" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="demo">Solicitar demonstração</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <a class="link-exemplo" href="/reservas?demo=1" data-t="exemplo">ou abra o exemplo agora</a>
         </div>
-        <figure class="celular solo"><img src="/v/morador.jpg" alt="Área do morador no celular" width="466" height="700" loading="lazy" data-t-alt="p.m.alt"></figure>
+        <div class="maquete" aria-hidden="true">
+          <div class="calendario">
+            <div class="cal-cab"><span></span><span>Qui 12</span><span>Sex 13</span><span>Sáb 14</span><span>Dom 15</span><span>Seg 16</span><span>Ter 17</span><span>Qua 18</span></div>
+            <div class="cal-linha"><span>A · 101</span><i class="reserva booking" style="grid-column:2 / 5">Booking · Maria</i><i class="limpeza" style="grid-column:5 / 6" data-t="a2.limp">Limpeza</i><i class="reserva airbnb" style="grid-column:6 / 9">Airbnb · Felipe</i></div>
+            <div class="cal-linha"><span>A · 103</span><i class="reserva direto" style="grid-column:2 / 6" data-t="a2.direto">Direto · Roberto</i><i class="limpeza" style="grid-column:6 / 7" data-t="a2.limp">Limpeza</i></div>
+            <div class="cal-linha"><span>A · 201</span><i class="reserva stays" style="grid-column:3 / 8">Stays · Juliana</i></div>
+            <div class="cal-linha"><span>B · 101</span><i class="reserva airbnb" style="grid-column:2 / 4">Airbnb · Camila</i><i class="limpeza" style="grid-column:4 / 5" data-t="a2.limp">Limpeza</i><i class="reserva booking" style="grid-column:6 / 9">Booking · Ana</i></div>
+          </div>
+          <div class="legenda"><span><i class="booking"></i>Booking</span><span><i class="airbnb"></i>Airbnb</span><span><i class="stays"></i>Stays</span><span><i class="direto"></i><span data-t="a2.dir">Direto</span></span><span><i class="limpeza"></i><span data-t="a2.limp">Limpeza</span></span></div>
+        </div>
       </div>
 
-      <div class="painel" role="tabpanel" id="aba-portaria" aria-labelledby="t-portaria" hidden>
+      <div class="painel" role="tabpanel" id="a-guia" aria-labelledby="t-guia" hidden>
         <div class="painel-texto">
-          <h3 data-t="p.p.t">Portaria sabe quem chega e quem sai</h3>
-          <ul>
-            <li data-t="p.p.1">Chegadas e saídas do dia, com check-in online já conferido.</li>
-            <li data-t="p.p.2">Busca por nome, unidade, placa ou documento.</li>
-            <li data-t="p.p.3">Visitantes, veículos, encomendas e livro de ocorrências.</li>
+          <span class="etiqueta cor-guia" data-t="m.guia">Guia do Hóspede</span>
+          <h3 data-t="a3.t">O concierge que cabe no bolso do hóspede</h3>
+          <ul class="lista">
+            <li data-t="a3.1">Abre por link ou QR Code, sem instalar aplicativo</li>
+            <li data-t="a3.2">Senha do Wi-Fi copiada com um toque</li>
+            <li data-t="a3.3">Manual dos aparelhos da casa e regras do condomínio</li>
+            <li data-t="a3.4">Mapa da região com dicas locais, marés e emergência</li>
+            <li data-t="a3.5">Loja da casa: kit praia, enxoval extra e serviços</li>
           </ul>
-          <a class="link" href="/portaria?demo=1" data-t="p.ver">Ver o exemplo →</a>
+          <a class="pilula" data-whats="d-guia" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="demo">Solicitar demonstração</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <a class="link-exemplo" href="/r/demo" data-t="exemploGuia">ou abra o guia de exemplo</a>
         </div>
-        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/portaria.jpg" alt="Tela da portaria" width="1600" height="1000" loading="lazy" data-t-alt="p.p.alt"></figure>
+        <div class="maquete" aria-hidden="true">
+          <div class="mosaico-guia">
+            <span><i class="quad cor-cond"><svg class="ic"><use href="#i-wifi"/></svg></i><b>Wi-Fi</b><small data-t="a3.m1">Um toque para copiar</small></span>
+            <span><i class="quad cor-guia"><svg class="ic"><use href="#i-regras"/></svg></i><b data-t="g.regras">Regras</b><small data-t="a3.m2">Lidas e aceitas</small></span>
+            <span><i class="quad cor-coral"><svg class="ic"><use href="#i-tv"/></svg></i><b data-t="g.aparelhos">Aparelhos</b><small data-t="a3.m3">Como usar cada um</small></span>
+            <span><i class="quad cor-flat"><svg class="ic"><use href="#i-mapa"/></svg></i><b data-t="g.regiao">Região</b><small data-t="a3.m4">Praias e restaurantes</small></span>
+            <span><i class="quad cor-port"><svg class="ic"><use href="#i-onda"/></svg></i><b data-t="g.mares">Marés</b><small data-t="a3.m5">Tábua do dia</small></span>
+            <span><i class="quad cor-roxo"><svg class="ic"><use href="#i-sacola"/></svg></i><b data-t="g.loja">Loja</b><small data-t="a3.m6">Itens extras</small></span>
+            <span><i class="quad cor-coral"><svg class="ic"><use href="#i-sirene"/></svg></i><b data-t="g.emerg">Emergência</b><small data-t="a3.m7">Contatos úteis</small></span>
+            <span><i class="quad cor-cinza"><svg class="ic"><use href="#i-sair"/></svg></i><b>Check-out</b><small data-t="a3.m8">Passo a passo</small></span>
+          </div>
+        </div>
       </div>
 
-      <div class="painel" role="tabpanel" id="aba-hospede" aria-labelledby="t-hospede" hidden>
+      <div class="painel" role="tabpanel" id="a-port" aria-labelledby="t-port" hidden>
         <div class="painel-texto">
-          <h3 data-t="p.h.t">Hospedagem sem papel e sem mensagem repetida</h3>
-          <ul>
-            <li data-t="p.h.1">O hóspede faz o check-in online e lê as regras antes de chegar.</li>
-            <li data-t="p.h.2">Wi-Fi, senhas, mapa da região e contatos num link só.</li>
-            <li data-t="p.h.3">O anfitrião acompanha reservas e o condomínio recebe tudo pronto.</li>
+          <span class="etiqueta cor-port" data-t="m.port">Portaria &amp; Segurança</span>
+          <h3 data-t="a4.t">A portaria sabe quem é, antes de a pessoa chegar</h3>
+          <ul class="lista">
+            <li data-t="a4.1">Chegadas e saídas do dia, com o check-in online já conferido</li>
+            <li data-t="a4.2">Busca por nome, unidade, placa ou documento</li>
+            <li data-t="a4.3">Hóspedes, visitantes e prestadores homologados num lugar só</li>
+            <li data-t="a4.4">Entrada registrada com um toque e livro de ocorrências digital</li>
           </ul>
-          <a class="link" href="/r/demo" data-t="p.verGuia">Abrir o guia de exemplo →</a>
+          <a class="pilula" data-whats="d-port" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="demo">Solicitar demonstração</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <a class="link-exemplo" href="/portaria?demo=1" data-t="exemplo">ou abra o exemplo agora</a>
         </div>
-        <figure class="celular solo"><img src="/v/guia.jpg" alt="Guia do hóspede no celular" width="424" height="700" loading="lazy" data-t-alt="p.h.alt"></figure>
-      </div>
-
-      <div class="painel" role="tabpanel" id="aba-manutencao" aria-labelledby="t-manutencao" hidden>
-        <div class="painel-texto">
-          <h3 data-t="p.o.t">Manutenção organizada, do pedido à entrega</h3>
-          <ul>
-            <li data-t="p.o.1">Ordens de serviço em quadro, com prazo, responsável e fotos.</li>
-            <li data-t="p.o.2">Fluxos de aprovação e validação pelo síndico.</li>
-            <li data-t="p.o.3">Materiais e fornecedores ligados a cada serviço.</li>
-          </ul>
-          <a class="link" href="/os?demo=1&amp;perfil=gestor" data-t="p.ver">Ver o exemplo →</a>
+        <div class="maquete" aria-hidden="true">
+          <div class="busca"><svg class="ic"><use href="#i-busca"/></svg><span data-t="a4.busca">Buscar por nome, unidade, placa ou documento</span></div>
+          <div class="pessoa"><span class="avatar cor-cond">RC</span><div><b>Roberto Carvalho</b><small>A · 103 · <span data-t="a4.p1">chega às 14:00 · 1 veículo</span></small></div><span class="st azul" data-t="a4.hosp">Hóspede</span><span class="mini-btn" data-t="a4.entrada">Registrar entrada</span></div>
+          <div class="pessoa"><span class="avatar cor-port">FT</span><div><b>Frio Total</b><small data-t="a4.p2">Ar-condicionado · OS #42</small></div><span class="st roxo" data-t="a4.prest">Prestador</span><span class="mini-btn" data-t="a4.entrada">Registrar entrada</span></div>
+          <div class="pessoa"><span class="avatar cor-guia">JM</span><div><b>Juliana Martins</b><small>A · 201 · <span data-t="a4.p3">check-in online feito</span></small></div><span class="st verde" data-t="a4.conf">Conferido</span><span class="mini-btn feito" data-t="a4.dentro">Na casa</span></div>
         </div>
-        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/os.jpg" alt="Quadro de ordens de serviço" width="1600" height="739" loading="lazy" data-t-alt="p.o.alt"></figure>
       </div>
     </div>
   </section>
 
-  <section class="secao suave" id="modulos">
+  <!-- 4. Cards rápidos -->
+  <section class="secao suave">
     <div class="faixa">
-      <header class="cabeca revelar">
-        <p class="selo" data-t="mo.selo">Módulos</p>
-        <h2 data-t="mo.titulo">Monte o sistema do seu jeito</h2>
-        <p data-t="mo.sub">Comece pelo essencial e ligue novos módulos quando precisar.</p>
-      </header>
-      <div class="grade-modulos" id="gradeModulos"></div>
-    </div>
-  </section>
-
-  <section class="secao destaque" id="guia">
-    <div class="faixa destaque-grade">
-      <figure class="celular revelar"><img src="/v/guia.jpg" alt="Guia do hóspede" width="424" height="700" loading="lazy" data-t-alt="p.h.alt"></figure>
-      <div class="revelar">
-        <p class="selo claro" data-t="g.selo">Guia do hóspede</p>
-        <h2 data-t="g.titulo">Tudo o que o hóspede pergunta, respondido antes da pergunta</h2>
-        <ul class="checks">
-          <li data-t="g.1">Check-in online com documentos e termo LGPD.</li>
-          <li data-t="g.2">Regras da casa e do condomínio, lidas e aceitas.</li>
-          <li data-t="g.3">Wi-Fi, senhas de acesso e horários, liberados na hora certa.</li>
-          <li data-t="g.4">Mapa da região, contatos de emergência e loja com produtos da casa.</li>
-        </ul>
-        <a class="btn branco grande" href="/r/demo" data-t="g.btn">Abrir o guia de exemplo</a>
+      <div class="cards3">
+        <article class="card revelar"><span class="quad grande cor-cond"><svg class="ic"><use href="#i-sino"/></svg></span><h3 data-t="c.1t">Avisos automáticos</h3><p data-t="c.1">O hóspede recebe no celular os avisos da estadia e o morador, os comunicados do condomínio, sem ninguém disparar mensagem uma a uma.</p></article>
+        <article class="card revelar"><span class="quad grande cor-flat"><svg class="ic"><use href="#i-grafico"/></svg></span><h3 data-t="c.2t">Relatórios na hora</h3><p data-t="c.2">Ocupação, chegadas, serviços e ocorrências do período, prontos para prestar contas e baixar em planilha.</p></article>
+        <article class="card revelar"><span class="quad grande cor-guia"><svg class="ic"><use href="#i-estrela"/></svg></span><h3 data-t="c.3t">Experiência 5 estrelas</h3><p data-t="c.3">O hóspede chega sabendo tudo, encontra respostas sozinho e é convidado a avaliar no fim da estadia.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="secao" id="casa">
-    <div class="faixa casa revelar">
-      <p class="selo" data-t="c.selo">Começamos em casa</p>
-      <h2 data-t="c.titulo">Nasceu dentro de um condomínio de verdade</h2>
-      <p data-t="c.texto">O Maree Hub foi criado pela Atlântico, que administra hospedagem e serviços no Condomínio Maré Alta, em Tamandaré (PE). Cada tela resolve um problema que vivemos no dia a dia: hóspede chegando sem aviso, encomenda perdida, manutenção esquecida, regra que ninguém leu.</p>
-      <a class="link" href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener" data-t="c.link">Conheça a Atlântico →</a>
-    </div>
-  </section>
-
-  <section class="secao suave" id="seguranca">
-    <div class="faixa">
-      <header class="cabeca revelar">
-        <p class="selo" data-t="s.selo">Segurança e LGPD</p>
-        <h2 data-t="s.titulo">Seus dados protegidos de verdade</h2>
-      </header>
-      <div class="grade-seguranca">
-        <article class="cartao revelar"><h3 data-t="s.1t">Cada um vê só o que é seu</h3><p data-t="s.1">Cada condomínio e cada empresa enxerga apenas os próprios dados. A regra está no banco, não só na tela.</p></article>
-        <article class="cartao revelar"><h3 data-t="s.2t">Verificação em duas etapas</h3><p data-t="s.2">Acessos administrativos pedem o código do aplicativo autenticador.</p></article>
-        <article class="cartao revelar"><h3 data-t="s.3t">Tudo fica registrado</h3><p data-t="s.3">Quem fez, o que mudou e quando, num histórico que não pode ser apagado.</p></article>
-        <article class="cartao revelar"><h3 data-t="s.4t">LGPD desde o início</h3><p data-t="s.4">Consentimento do hóspede, termos versionados e dados guardados só pelo tempo necessário.</p></article>
-      </div>
-    </div>
-  </section>
-
+  <!-- 5. Planos -->
   <section class="secao" id="planos">
-    <div class="faixa planos revelar">
-      <div>
-        <p class="selo" data-t="pl.selo">Planos</p>
-        <h2 data-t="pl.titulo">Você paga só pelos módulos que usa</h2>
-        <p data-t="pl.texto">Cada condomínio, administradora ou anfitrião tem uma realidade. Conte como funciona a sua e montamos a proposta certa.</p>
+    <div class="faixa">
+      <header class="cabeca revelar">
+        <h2 data-t="pl.titulo">Planos sob medida para a sua operação</h2>
+        <p data-t="pl.sub">Você paga só pelos módulos que usa. A proposta sai pelo WhatsApp, sem formulário e sem compromisso.</p>
+      </header>
+      <div class="planos">
+        <article class="plano revelar">
+          <span class="etiqueta cor-cond" data-t="pl.1e">Condomínio</span>
+          <h3 data-t="pl.1n">Condomínio</h3>
+          <p class="para" data-t="pl.1p">Para síndicos e condomínios que querem portaria e comunicação organizadas.</p>
+          <p class="preco" data-t="pl.consulta">Sob consulta</p>
+          <ul class="lista">
+            <li data-t="pl.1.1">Portaria e controle de acesso</li>
+            <li data-t="pl.1.2">Visitantes, veículos e encomendas</li>
+            <li data-t="pl.1.3">Comunicados, documentos e ocorrências</li>
+            <li data-t="pl.1.4">Reservas de áreas comuns</li>
+            <li data-t="pl.1.5">Área do morador no celular</li>
+          </ul>
+          <a class="pilula contorno" data-whats="p1" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="pl.quero">Quero este plano</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+        </article>
+        <article class="plano destaque revelar">
+          <p class="fita" data-t="pl.fita">Recomendado</p>
+          <span class="etiqueta cor-flat" data-t="pl.2e">Short-stay</span>
+          <h3 data-t="pl.2n">Flats &amp; Short-Stay</h3>
+          <p class="para" data-t="pl.2p">Para anfitriões e gestores de flats que vivem de reservas.</p>
+          <p class="preco" data-t="pl.consulta">Sob consulta</p>
+          <ul class="lista">
+            <li data-t="pl.2.1">Reservas e check-in online</li>
+            <li data-t="pl.2.2">Guia do hóspede por link e QR Code</li>
+            <li data-t="pl.2.3">Calendários do Booking, Airbnb, Vrbo e Stays</li>
+            <li data-t="pl.2.4">Loja da casa e pedidos de enxoval</li>
+            <li data-t="pl.2.5">Limpeza e manutenção por ordem de serviço</li>
+          </ul>
+          <a class="pilula" data-whats="p2" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="pl.quero">Quero este plano</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+        </article>
+        <article class="plano revelar">
+          <span class="etiqueta cor-guia" data-t="pl.3e">Tudo junto</span>
+          <h3 data-t="pl.3n">Ecossistema Completo</h3>
+          <p class="para" data-t="pl.3p">Para administradoras com vários condomínios e operação de temporada.</p>
+          <p class="preco" data-t="pl.consulta">Sob consulta</p>
+          <ul class="lista">
+            <li data-t="pl.3.1">Tudo dos planos Condomínio e Flats</li>
+            <li data-t="pl.3.2">Vários condomínios num painel só</li>
+            <li data-t="pl.3.3">Sua marca no painel e no guia</li>
+            <li data-t="pl.3.4">Perfis de acesso por equipe e relatórios</li>
+            <li data-t="pl.3.5">Implantação acompanhada</li>
+          </ul>
+          <a class="pilula contorno" data-whats="p3" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><span data-t="pl.quero">Quero este plano</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+        </article>
       </div>
-      <a class="btn principal grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="pl.btn">Pedir uma proposta</a>
     </div>
   </section>
 
-  <section class="final">
-    <div class="faixa final-caixa revelar">
-      <h2 data-t="fi.titulo">Vamos organizar o seu condomínio?</h2>
-      <p data-t="fi.sub">Veja o sistema funcionando agora ou fale direto com a gente.</p>
-      <div class="botoes centro">
-        <a class="btn branco grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
-        <a class="btn vazado grande" href="/condominio?demo=1" data-t="h.demo">Ver demonstração</a>
+  <!-- 6. FAQ -->
+  <section class="secao suave" id="faq">
+    <div class="faixa estreita">
+      <header class="cabeca revelar"><h2 data-t="f.titulo">Perguntas frequentes</h2></header>
+      <div class="faq">
+        <details><summary><span data-t="f.1p">Integra com o Airbnb e o Booking?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.1r">Sim. As reservas do Booking, Airbnb e Vrbo entram pelo calendário iCal de cada anúncio, e a integração com a Stays traz também os dados do hóspede. O envio de preços e disponibilidade para os canais (channel manager completo) está em desenvolvimento.</p></details>
+        <details><summary><span data-t="f.2p">Como a equipe da portaria aprende a usar?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.2r">A tela da portaria foi desenhada para ser usada sem manual: chegadas do dia, busca por nome, placa ou documento e um toque para registrar a entrada. Na implantação, treinamos a equipe e acompanhamos os primeiros dias.</p></details>
+        <details><summary><span data-t="f.3p">Preciso digitar tudo de novo?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.3r">Não. As unidades entram por planilha, as reservas chegam pelos calendários conectados e os moradores completam o próprio cadastro pelo convite.</p></details>
+        <details><summary><span data-t="f.4p">Como funciona o suporte?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.4r">Pelo WhatsApp, com gente de verdade: a equipe da Atlântico, que usa o sistema todos os dias no Condomínio Maré Alta.</p></details>
+        <details><summary><span data-t="f.5p">O hóspede precisa baixar algum aplicativo?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.5r">Não. O guia abre no navegador do celular, por link ou QR Code, em português, inglês ou espanhol.</p></details>
+        <details><summary><span data-t="f.6p">Posso contratar só uma parte?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.6r">Pode. O sistema é vendido por módulos: comece pelo que resolve o seu problema hoje e ligue os outros quando quiser.</p></details>
+        <details><summary><span data-t="f.7p">Meus dados ficam seguros?</span><svg class="ic" aria-hidden="true"><use href="#i-baixo"/></svg></summary><p data-t="f.7r">Cada condomínio e cada empresa só enxerga os próprios dados, com a regra aplicada no banco. Acessos administrativos pedem verificação em duas etapas, tudo fica registrado e o hóspede assina o termo de consentimento da LGPD.</p></details>
       </div>
+    </div>
+  </section>
+
+  <!-- 7. Chamada final -->
+  <section class="final">
+    <div class="faixa revelar">
+      <h2 data-t="fi.titulo">Pronto para transformar sua gestão?</h2>
+      <p data-t="fi.sub">Síndico, administradora ou anfitrião: fale com a gente e veja o sistema funcionando com a sua operação.</p>
+      <a class="pilula grande" data-whats="comercial" href="https://wa.me/5581997645359" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg><span data-t="fi.cta">Começar conversa no WhatsApp</span><svg class="ic seta" aria-hidden="true"><use href="#i-seta"/></svg></a>
+      <a class="link-claro" href="/condominio?demo=1" data-t="fi.demo">ou teste o sistema de exemplo agora</a>
     </div>
   </section>
 </main>
@@ -263,14 +396,18 @@
       <a class="marca" href="/" aria-label="Maree Hub"><img src="/v/simbolo-192.png" alt="" width="32" height="32"><span><b>Maree <em>Hub</em></b></span></a>
       <p class="assina"><span data-t="r.solucao">Uma solução</span> <a href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener"><img src="/v/atlantico.png" alt="Atlântico" height="52"></a></p>
     </div>
-    <nav aria-label="Produto"><h3 data-t="r.produto">Produto</h3><a href="#perfis" data-t="m.solucoes">Soluções</a><a href="#modulos" data-t="m.modulos">Módulos</a><a href="#guia" data-t="m.guia">Guia do hóspede</a><a href="/entrar" data-t="entrar">Entrar</a></nav>
-    <nav aria-label="Contato"><h3 data-t="r.contato">Contato</h3><a data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener">WhatsApp (81) 99764-5359</a><a href="https://www.instagram.com/atlanticotemporada/" target="_blank" rel="noopener">Instagram @atlanticotemporada</a><a href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener">atlanticofacilitytemporada.com.br</a></nav>
+    <nav aria-label="Produto"><h3 data-t="r.produto">Produto</h3><a href="#condominios" data-aba="cond" data-t="m.cond">Condomínios</a><a href="#flats" data-aba="flat" data-t="m.flats">Flats &amp; Temporada</a><a href="#guia" data-aba="guia" data-t="m.guia">Guia do Hóspede</a><a href="#planos" data-t="m.planos">Planos</a><a href="/entrar" data-t="entrar">Entrar</a></nav>
+    <nav aria-label="Contato"><h3 data-t="r.contato">Contato</h3><a data-whats="comercial" href="https://wa.me/5581997645359" target="_blank" rel="noopener">WhatsApp (81) 99764-5359</a><a href="https://www.instagram.com/atlanticotemporada/" target="_blank" rel="noopener">Instagram @atlanticotemporada</a><a href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener">atlanticofacilitytemporada.com.br</a></nav>
     <nav aria-label="Legal"><h3 data-t="r.legal">Legal</h3><a href="/entrar?doc=termos" data-t="r.termos">Termos de uso</a><a href="/entrar?doc=privacidade" data-t="r.privacidade">Política de privacidade</a></nav>
   </div>
-  <div class="faixa rodape-fim">
-    <p>© <span id="ano">2026</span> Maree Hub · LEONILSON DE ARAUJO BARBOZA - ME · CNPJ 47.633.279/0001-04</p>
-  </div>
+  <div class="faixa rodape-fim"><p>© <span id="ano">2026</span> Maree Hub · LEONILSON DE ARAUJO BARBOZA - ME · CNPJ 47.633.279/0001-04</p></div>
 </footer>
+
+<a class="flutuante" data-whats="comercial" href="https://wa.me/5581997645359" target="_blank" rel="noopener" aria-label="Falar com o comercial no WhatsApp">
+  <span class="flutuante-rotulo"><i></i><span data-t="flut">Comercial no WhatsApp</span></span>
+  <span class="flutuante-botao"><svg class="ic" aria-hidden="true"><use href="#i-whats"/></svg></span>
+</a>
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
 
 <script src="/v/site.js" defer></script>
 </body>
