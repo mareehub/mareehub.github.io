@@ -12,7 +12,7 @@ self.addEventListener('push', (evento) => {
 
 self.addEventListener('notificationclick', (evento) => {
   evento.notification.close();
-  const url = (evento.notification.data && evento.notification.data.url) || '/';
+  const url = (evento.notification.data && evento.notification.data.url) || '/entrar';
   evento.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((janelas) => {
     for (const j of janelas) {
       if (j.url === url && 'focus' in j) return j.focus();

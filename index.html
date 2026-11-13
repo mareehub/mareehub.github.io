@@ -1,36 +1,277 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Maree Hub</title>
-    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
-    <style id="expo-reset">
-      /* These styles make the body full-height */
-      html,
-      body {
-        height: 100%;
+<html lang="pt-BR" class="sem-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maree Hub · Condomínio e hospedagem num lugar só</title>
+<meta name="description" content="Maree Hub, uma solução Atlântico: portaria, moradores, hóspedes, manutenção, documentos e loja conectados num só sistema, no celular e no computador.">
+<link rel="canonical" href="https://mareehub.com.br/">
+<meta name="theme-color" content="#6161FF">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maree Hub">
+<meta property="og:title" content="Maree Hub · Condomínio e hospedagem num lugar só">
+<meta property="og:description" content="Portaria, moradores, hóspedes, manutenção e loja conectados. Uma solução Atlântico.">
+<meta property="og:url" content="https://mareehub.com.br/">
+<meta property="og:image" content="https://mareehub.com.br/v/previa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/v/simbolo-192.png">
+<script>
+  // Quem chega de um e-mail de login, de um convite ou já está logado vai direto ao sistema (/entrar).
+  (function () {
+    var l = window.location;
+    var extra = l.search.replace(/^\?/, '').split('&').filter(function (p) { return p && !/^(utm_[a-z]+|fbclid|gclid|gbraid|wbraid)=/.test(p); });
+    if (/access_token|error_description|type=/.test(l.hash) || extra.length) { l.replace('/entrar' + l.search + l.hash); return; }
+    try {
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i) || '';
+        if (/^sb-.*-auth-token$/.test(k) || k === 'maree.convitePendente' || k === 'maree.conviteEmpresaPendente') { l.replace('/entrar'); return; }
       }
-      /* These styles disable body scrolling if you are using <ScrollView> */
-      body {
-        overflow: hidden;
-      }
-      /* These styles make the root element full-height */
-      #root {
-        display: flex;
-        height: 100%;
-        flex: 1;
-      }
-    </style>
-  <link rel="icon" href="/favicon.ico"/><link rel="preload" href="/_expo/static/css/global-002e098fe08c903c06e6e68480739290.css" as="style">
-<link rel="stylesheet" href="/_expo/static/css/global-002e098fe08c903c06e6e68480739290.css"></head>
+    } catch (e) { /* navegador sem armazenamento: mostra o site */ }
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/v/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Maree Hub","applicationCategory":"BusinessApplication","operatingSystem":"Web, Android, iOS","url":"https://mareehub.com.br/","description":"Gestão de condomínio e hospedagem: portaria, moradores, hóspedes, manutenção, documentos e loja.","publisher":{"@type":"Organization","name":"Atlântico Facility & Temporada","url":"https://atlanticofacilitytemporada.com.br"}}
+</script>
+</head>
+<body>
+<a class="pular" href="#conteudo" data-t="pular">Pular para o conteúdo</a>
 
-  <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript> You need to enable JavaScript to run this app. </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/_expo/static/js/web/__expo-metro-runtime-ed4c1cfa6193d76fc294130e42bd1916.js" defer></script><script src="/_expo/static/js/web/__common-52f4c670d92b1325f21c89efb758074b.js" defer></script><script src="/_expo/static/js/web/entry-5c4d4ea30cad508f885222c43c18fc48.js" defer></script>
+<header class="topo" id="topo">
+  <div class="faixa">
+    <a class="marca" href="/" aria-label="Maree Hub">
+      <img src="/v/simbolo-192.png" alt="" width="36" height="36">
+      <span><b>Maree <em>Hub</em></b><small data-t="assinatura">uma solução Atlântico</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#perfis" data-t="m.solucoes">Soluções</a>
+      <a href="#modulos" data-t="m.modulos">Módulos</a>
+      <a href="#guia" data-t="m.guia">Guia do hóspede</a>
+      <a href="#seguranca" data-t="m.seguranca">Segurança</a>
+      <a href="#planos" data-t="m.planos">Planos</a>
+      <a class="so-celular" href="/entrar" data-t="entrar">Entrar</a>
+    </nav>
+    <div class="acoes">
+      <label class="idioma"><span class="oculto" data-t="idioma">Idioma</span>
+        <select id="idioma" aria-label="Idioma">
+          <option value="pt-BR">PT</option><option value="en">EN</option><option value="es">ES</option>
+        </select>
+      </label>
+      <a class="btn texto so-computador" href="/entrar" data-t="entrar">Entrar</a>
+      <a class="btn principal so-computador" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
+      <button class="hamburguer" id="abrirMenu" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="abertura">
+    <div class="faixa abertura-grade">
+      <div class="abertura-texto revelar">
+        <p class="selo" data-t="h.selo">Uma solução Atlântico</p>
+        <h1 data-t="h.titulo">Seu condomínio e sua hospedagem <span>num lugar só.</span></h1>
+        <p class="sub" data-t="h.sub">Portaria, moradores, hóspedes, manutenção, documentos e loja, conectados. No celular e no computador, sem instalar nada.</p>
+        <div class="botoes">
+          <a class="btn principal grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
+          <a class="btn contorno grande" href="/condominio?demo=1" data-t="h.demo">Ver demonstração</a>
+        </div>
+        <p class="micro" data-t="h.micro">A demonstração abre um condomínio de exemplo, sem cadastro.</p>
+      </div>
+      <div class="mosaico revelar" aria-hidden="true">
+        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/condominio.jpg" alt="" width="1600" height="1000" fetchpriority="high"></figure>
+        <figure class="celular"><img src="/v/guia.jpg" alt="" width="424" height="700"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="fatos" aria-label="Em resumo">
+    <div class="faixa fatos-grade">
+      <p><b data-t="f.1a">Em uso no Maré Alta</b><span data-t="f.1b">Tamandaré, Pernambuco</span></p>
+      <p><b data-t="f.2a">Sem instalar</b><span data-t="f.2b">abre no navegador e vira app no celular</span></p>
+      <p><b data-t="f.3a">3 idiomas</b><span data-t="f.3b">português, inglês e espanhol</span></p>
+      <p><b data-t="f.4a">Por módulos</b><span data-t="f.4b">você contrata só o que usa</span></p>
+    </div>
+  </section>
+
+  <section class="secao" id="perfis">
+    <div class="faixa">
+      <header class="cabeca revelar">
+        <p class="selo" data-t="p.selo">Para quem é</p>
+        <h2 data-t="p.titulo">Cada pessoa vê o que precisa</h2>
+        <p data-t="p.sub">O mesmo sistema, com uma tela certa para cada perfil.</p>
+      </header>
+      <div class="abas" role="tablist" aria-label="Perfis">
+        <button role="tab" aria-selected="true" aria-controls="aba-sindico" id="t-sindico" data-t="p.sindico">Síndico</button>
+        <button role="tab" aria-selected="false" aria-controls="aba-morador" id="t-morador" tabindex="-1" data-t="p.morador">Morador</button>
+        <button role="tab" aria-selected="false" aria-controls="aba-portaria" id="t-portaria" tabindex="-1" data-t="p.portaria">Portaria</button>
+        <button role="tab" aria-selected="false" aria-controls="aba-hospede" id="t-hospede" tabindex="-1" data-t="p.hospede">Anfitrião e hóspede</button>
+        <button role="tab" aria-selected="false" aria-controls="aba-manutencao" id="t-manutencao" tabindex="-1" data-t="p.manutencao">Manutenção</button>
+      </div>
+
+      <div class="painel" role="tabpanel" id="aba-sindico" aria-labelledby="t-sindico">
+        <div class="painel-texto">
+          <h3 data-t="p.s.t">O condomínio inteiro numa tela</h3>
+          <ul>
+            <li data-t="p.s.1">Ocupação, hóspedes na casa e check-ins pendentes, ao abrir o painel.</li>
+            <li data-t="p.s.2">Unidades, moradores, comunicados, documentos e áreas comuns, tudo cadastrado num lugar.</li>
+            <li data-t="p.s.3">Perfis de acesso para administradora, conselho, portaria e zeladoria.</li>
+          </ul>
+          <a class="link" href="/condominio?demo=1" data-t="p.ver">Ver o exemplo →</a>
+        </div>
+        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/condominio.jpg" alt="Painel do síndico do Maree Hub" width="1600" height="1000" loading="lazy" data-t-alt="p.s.alt"></figure>
+      </div>
+
+      <div class="painel" role="tabpanel" id="aba-morador" aria-labelledby="t-morador" hidden>
+        <div class="painel-texto">
+          <h3 data-t="p.m.t">O morador resolve pelo celular</h3>
+          <ul>
+            <li data-t="p.m.1">Avisos, encomendas, visitas e reservas de áreas comuns.</li>
+            <li data-t="p.m.2">Abre ordens de serviço e acompanha cada etapa.</li>
+            <li data-t="p.m.3">Regras e documentos do condomínio sempre à mão, sem baixar arquivo.</li>
+          </ul>
+          <a class="link" href="/morador?demo=1" data-t="p.ver">Ver o exemplo →</a>
+        </div>
+        <figure class="celular solo"><img src="/v/morador.jpg" alt="Área do morador no celular" width="466" height="700" loading="lazy" data-t-alt="p.m.alt"></figure>
+      </div>
+
+      <div class="painel" role="tabpanel" id="aba-portaria" aria-labelledby="t-portaria" hidden>
+        <div class="painel-texto">
+          <h3 data-t="p.p.t">Portaria sabe quem chega e quem sai</h3>
+          <ul>
+            <li data-t="p.p.1">Chegadas e saídas do dia, com check-in online já conferido.</li>
+            <li data-t="p.p.2">Busca por nome, unidade, placa ou documento.</li>
+            <li data-t="p.p.3">Visitantes, veículos, encomendas e livro de ocorrências.</li>
+          </ul>
+          <a class="link" href="/portaria?demo=1" data-t="p.ver">Ver o exemplo →</a>
+        </div>
+        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/portaria.jpg" alt="Tela da portaria" width="1600" height="1000" loading="lazy" data-t-alt="p.p.alt"></figure>
+      </div>
+
+      <div class="painel" role="tabpanel" id="aba-hospede" aria-labelledby="t-hospede" hidden>
+        <div class="painel-texto">
+          <h3 data-t="p.h.t">Hospedagem sem papel e sem mensagem repetida</h3>
+          <ul>
+            <li data-t="p.h.1">O hóspede faz o check-in online e lê as regras antes de chegar.</li>
+            <li data-t="p.h.2">Wi-Fi, senhas, mapa da região e contatos num link só.</li>
+            <li data-t="p.h.3">O anfitrião acompanha reservas e o condomínio recebe tudo pronto.</li>
+          </ul>
+          <a class="link" href="/r/demo" data-t="p.verGuia">Abrir o guia de exemplo →</a>
+        </div>
+        <figure class="celular solo"><img src="/v/guia.jpg" alt="Guia do hóspede no celular" width="424" height="700" loading="lazy" data-t-alt="p.h.alt"></figure>
+      </div>
+
+      <div class="painel" role="tabpanel" id="aba-manutencao" aria-labelledby="t-manutencao" hidden>
+        <div class="painel-texto">
+          <h3 data-t="p.o.t">Manutenção organizada, do pedido à entrega</h3>
+          <ul>
+            <li data-t="p.o.1">Ordens de serviço em quadro, com prazo, responsável e fotos.</li>
+            <li data-t="p.o.2">Fluxos de aprovação e validação pelo síndico.</li>
+            <li data-t="p.o.3">Materiais e fornecedores ligados a cada serviço.</li>
+          </ul>
+          <a class="link" href="/os?demo=1&amp;perfil=gestor" data-t="p.ver">Ver o exemplo →</a>
+        </div>
+        <figure class="janela"><div class="barra"><i></i><i></i><i></i></div><img src="/v/os.jpg" alt="Quadro de ordens de serviço" width="1600" height="739" loading="lazy" data-t-alt="p.o.alt"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao suave" id="modulos">
+    <div class="faixa">
+      <header class="cabeca revelar">
+        <p class="selo" data-t="mo.selo">Módulos</p>
+        <h2 data-t="mo.titulo">Monte o sistema do seu jeito</h2>
+        <p data-t="mo.sub">Comece pelo essencial e ligue novos módulos quando precisar.</p>
+      </header>
+      <div class="grade-modulos" id="gradeModulos"></div>
+    </div>
+  </section>
+
+  <section class="secao destaque" id="guia">
+    <div class="faixa destaque-grade">
+      <figure class="celular revelar"><img src="/v/guia.jpg" alt="Guia do hóspede" width="424" height="700" loading="lazy" data-t-alt="p.h.alt"></figure>
+      <div class="revelar">
+        <p class="selo claro" data-t="g.selo">Guia do hóspede</p>
+        <h2 data-t="g.titulo">Tudo o que o hóspede pergunta, respondido antes da pergunta</h2>
+        <ul class="checks">
+          <li data-t="g.1">Check-in online com documentos e termo LGPD.</li>
+          <li data-t="g.2">Regras da casa e do condomínio, lidas e aceitas.</li>
+          <li data-t="g.3">Wi-Fi, senhas de acesso e horários, liberados na hora certa.</li>
+          <li data-t="g.4">Mapa da região, contatos de emergência e loja com produtos da casa.</li>
+        </ul>
+        <a class="btn branco grande" href="/r/demo" data-t="g.btn">Abrir o guia de exemplo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="casa">
+    <div class="faixa casa revelar">
+      <p class="selo" data-t="c.selo">Começamos em casa</p>
+      <h2 data-t="c.titulo">Nasceu dentro de um condomínio de verdade</h2>
+      <p data-t="c.texto">O Maree Hub foi criado pela Atlântico, que administra hospedagem e serviços no Condomínio Maré Alta, em Tamandaré (PE). Cada tela resolve um problema que vivemos no dia a dia: hóspede chegando sem aviso, encomenda perdida, manutenção esquecida, regra que ninguém leu.</p>
+      <a class="link" href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener" data-t="c.link">Conheça a Atlântico →</a>
+    </div>
+  </section>
+
+  <section class="secao suave" id="seguranca">
+    <div class="faixa">
+      <header class="cabeca revelar">
+        <p class="selo" data-t="s.selo">Segurança e LGPD</p>
+        <h2 data-t="s.titulo">Seus dados protegidos de verdade</h2>
+      </header>
+      <div class="grade-seguranca">
+        <article class="cartao revelar"><h3 data-t="s.1t">Cada um vê só o que é seu</h3><p data-t="s.1">Cada condomínio e cada empresa enxerga apenas os próprios dados. A regra está no banco, não só na tela.</p></article>
+        <article class="cartao revelar"><h3 data-t="s.2t">Verificação em duas etapas</h3><p data-t="s.2">Acessos administrativos pedem o código do aplicativo autenticador.</p></article>
+        <article class="cartao revelar"><h3 data-t="s.3t">Tudo fica registrado</h3><p data-t="s.3">Quem fez, o que mudou e quando, num histórico que não pode ser apagado.</p></article>
+        <article class="cartao revelar"><h3 data-t="s.4t">LGPD desde o início</h3><p data-t="s.4">Consentimento do hóspede, termos versionados e dados guardados só pelo tempo necessário.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="planos">
+    <div class="faixa planos revelar">
+      <div>
+        <p class="selo" data-t="pl.selo">Planos</p>
+        <h2 data-t="pl.titulo">Você paga só pelos módulos que usa</h2>
+        <p data-t="pl.texto">Cada condomínio, administradora ou anfitrião tem uma realidade. Conte como funciona a sua e montamos a proposta certa.</p>
+      </div>
+      <a class="btn principal grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="pl.btn">Pedir uma proposta</a>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="faixa final-caixa revelar">
+      <h2 data-t="fi.titulo">Vamos organizar o seu condomínio?</h2>
+      <p data-t="fi.sub">Veja o sistema funcionando agora ou fale direto com a gente.</p>
+      <div class="botoes centro">
+        <a class="btn branco grande" data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener" data-t="falar">Fale com a gente</a>
+        <a class="btn vazado grande" href="/condominio?demo=1" data-t="h.demo">Ver demonstração</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="faixa rodape-grade">
+    <div>
+      <a class="marca" href="/" aria-label="Maree Hub"><img src="/v/simbolo-192.png" alt="" width="32" height="32"><span><b>Maree <em>Hub</em></b></span></a>
+      <p class="assina"><span data-t="r.solucao">Uma solução</span> <a href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener"><img src="/v/atlantico.png" alt="Atlântico" height="52"></a></p>
+    </div>
+    <nav aria-label="Produto"><h3 data-t="r.produto">Produto</h3><a href="#perfis" data-t="m.solucoes">Soluções</a><a href="#modulos" data-t="m.modulos">Módulos</a><a href="#guia" data-t="m.guia">Guia do hóspede</a><a href="/entrar" data-t="entrar">Entrar</a></nav>
+    <nav aria-label="Contato"><h3 data-t="r.contato">Contato</h3><a data-whats href="https://wa.me/5581997645359" target="_blank" rel="noopener">WhatsApp (81) 99764-5359</a><a href="https://www.instagram.com/atlanticotemporada/" target="_blank" rel="noopener">Instagram @atlanticotemporada</a><a href="https://atlanticofacilitytemporada.com.br" target="_blank" rel="noopener">atlanticofacilitytemporada.com.br</a></nav>
+    <nav aria-label="Legal"><h3 data-t="r.legal">Legal</h3><a href="/entrar?doc=termos" data-t="r.termos">Termos de uso</a><a href="/entrar?doc=privacidade" data-t="r.privacidade">Política de privacidade</a></nav>
+  </div>
+  <div class="faixa rodape-fim">
+    <p>© <span id="ano">2026</span> Maree Hub · LEONILSON DE ARAUJO BARBOZA - ME · CNPJ 47.633.279/0001-04</p>
+  </div>
+</footer>
+
+<script src="/v/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /$
+Allow: /v/
+Disallow: /
+Sitemap: https://mareehub.com.br/sitemap.xml
